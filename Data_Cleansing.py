@@ -21,6 +21,8 @@ print(missing_values_count)
 # 2.2  split dataset into two subset  for two types of problems.
 
 df_n = dataset.iloc[:, 0:20].dropna()       # generate subset  about normal flights
+print(df_n)
 
 df_c = dataset[dataset['Cancelled'] == 1]         # generate subset  about cancelled flights
 df_c = df_c.iloc[:, 0:21].dropna(axis=1)
+print(df_c)
