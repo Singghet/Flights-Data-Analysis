@@ -28,3 +28,4 @@ df_c = dataset[dataset['Cancelled'] == 1]         # generate subset  about cance
 df_c = df_c.iloc[:, 0:21].dropna(axis=1)
 print(df_c)
 print(df_c.shape)
+print("hello !")
